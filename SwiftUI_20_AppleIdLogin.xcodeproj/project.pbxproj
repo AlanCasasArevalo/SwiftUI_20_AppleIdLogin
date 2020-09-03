@@ -13,6 +13,8 @@
 		518E51DD250120E20023D77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E51DC250120E20023D77C /* Assets.xcassets */; };
 		518E51E0250120E20023D77C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E51DF250120E20023D77C /* Preview Assets.xcassets */; };
 		518E51E3250120E20023D77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51E1250120E20023D77C /* LaunchScreen.storyboard */; };
+		518E51EB250121B50023D77C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E51EA250121B50023D77C /* UserModel.swift */; };
+		518E51EE250122350023D77C /* AppleIdButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E51ED250122350023D77C /* AppleIdButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		518E51DF250120E20023D77C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		518E51E2250120E20023D77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518E51E4250120E20023D77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518E51EA250121B50023D77C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		518E51ED250122350023D77C /* AppleIdButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIdButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				518E51D6250120E00023D77C /* AppDelegate.swift */,
 				518E51D8250120E00023D77C /* SceneDelegate.swift */,
 				518E51DA250120E00023D77C /* ContentView.swift */,
+				518E51ED250122350023D77C /* AppleIdButton.swift */,
+				518E51EC2501221D0023D77C /* Model */,
 				518E51DC250120E20023D77C /* Assets.xcassets */,
 				518E51E1250120E20023D77C /* LaunchScreen.storyboard */,
 				518E51E4250120E20023D77C /* Info.plist */,
@@ -73,6 +79,14 @@
 				518E51DF250120E20023D77C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		518E51EC2501221D0023D77C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				518E51EA250121B50023D77C /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +162,9 @@
 			files = (
 				518E51D7250120E00023D77C /* AppDelegate.swift in Sources */,
 				518E51D9250120E00023D77C /* SceneDelegate.swift in Sources */,
+				518E51EB250121B50023D77C /* UserModel.swift in Sources */,
 				518E51DB250120E00023D77C /* ContentView.swift in Sources */,
+				518E51EE250122350023D77C /* AppleIdButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
