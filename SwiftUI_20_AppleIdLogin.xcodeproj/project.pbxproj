@@ -16,6 +16,7 @@
 		518E51EB250121B50023D77C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E51EA250121B50023D77C /* UserModel.swift */; };
 		518E51EE250122350023D77C /* AppleIdButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E51ED250122350023D77C /* AppleIdButton.swift */; };
 		51A72C22250126CF00BB69B0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A72C21250126CF00BB69B0 /* ViewModel.swift */; };
+		51A72C27250128EC00BB69B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A72C26250128EC00BB69B0 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		518E51EA250121B50023D77C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		518E51ED250122350023D77C /* AppleIdButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIdButton.swift; sourceTree = "<group>"; };
 		51A72C21250126CF00BB69B0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		51A72C23250128BA00BB69B0 /* SwiftUI_20_AppleIdLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_20_AppleIdLogin.entitlements; sourceTree = "<group>"; };
+		51A72C26250128EC00BB69B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +65,12 @@
 		518E51D5250120E00023D77C /* SwiftUI_20_AppleIdLogin */ = {
 			isa = PBXGroup;
 			children = (
+				51A72C23250128BA00BB69B0 /* SwiftUI_20_AppleIdLogin.entitlements */,
 				518E51D6250120E00023D77C /* AppDelegate.swift */,
 				518E51D8250120E00023D77C /* SceneDelegate.swift */,
 				518E51DA250120E00023D77C /* ContentView.swift */,
 				518E51ED250122350023D77C /* AppleIdButton.swift */,
+				51A72C26250128EC00BB69B0 /* HomeView.swift */,
 				51A72C20250126BF00BB69B0 /* ViewModel */,
 				518E51EC2501221D0023D77C /* Model */,
 				518E51DC250120E20023D77C /* Assets.xcassets */,
@@ -172,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				518E51D7250120E00023D77C /* AppDelegate.swift in Sources */,
+				51A72C27250128EC00BB69B0 /* HomeView.swift in Sources */,
 				518E51D9250120E00023D77C /* SceneDelegate.swift in Sources */,
 				518E51EB250121B50023D77C /* UserModel.swift in Sources */,
 				518E51DB250120E00023D77C /* ContentView.swift in Sources */,
@@ -312,9 +318,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SwiftUI_20_AppleIdLogin/SwiftUI_20_AppleIdLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_20_AppleIdLogin/Preview Content\"";
-				DEVELOPMENT_TEAM = 5J2G4846S8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_20_AppleIdLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alancasasarevalo-gmail.SwiftUI-20-AppleIdLogin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,9 +341,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SwiftUI_20_AppleIdLogin/SwiftUI_20_AppleIdLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_20_AppleIdLogin/Preview Content\"";
-				DEVELOPMENT_TEAM = 5J2G4846S8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_20_AppleIdLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -343,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alancasasarevalo-gmail.SwiftUI-20-AppleIdLogin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
