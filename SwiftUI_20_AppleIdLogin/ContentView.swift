@@ -9,7 +9,7 @@ struct ContentView: View {
         return Group {
             
             if isLogged {
-                HomeView()
+                HomeView(isLogged: self.$isLogged)
             } else {
                 VStack {
                     Button(action: {
@@ -19,6 +19,13 @@ struct ContentView: View {
                             .background(Color.primary)
                             .cornerRadius(15, antialiased: true)
                             .frame(width: 200, height: 50)
+                    }
+                    Button(action: {
+                        if UserDefaults.standard.object(forKey: "userEncoded") != nil {
+                            self.isLogged = true
+                        }
+                    }) {
+                        Text("Continuar")
                     }
                 }
             }
