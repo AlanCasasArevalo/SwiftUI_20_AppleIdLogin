@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct UserModel: Encodable {
+struct UserModel: Codable {
     let name: String?
     let email: String?
 }
